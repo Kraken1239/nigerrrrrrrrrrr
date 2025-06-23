@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Продажа Logitech G29</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://github.com/Kraken1239/logitech222/blob/main/A3BABF57-4E09-4FAB-B26A-9C27CF18D4C1.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffe6ff;
+      animation: bgPulse 10s infinite alternate;
+    }
+    @keyframes bgPulse {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.15); }
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgba(46, 0, 62, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+      animation: float 6s ease-in-out infinite;
+      position: relative;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .header-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+      animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    header h1 {
+      font-size: 3em;
+      color: #ff66cc;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 15px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .price {
+      font-size: 2.5em;
+      color: #ff99ff;
+      margin: 25px 0;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .buttons a, .music-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      background-color: #ff33cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .buttons a:hover, .music-button:hover {
+      background-color: #cc0099;
+      transform: scale(1.05);
+    }
+    .features {
+      background-color: rgba(46, 0, 62, 0.85);
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+    }
+    .features h2 {
+      color: #ff66cc;
+      font-size: 1.8em;
+      border-bottom: 2px solid #ff66cc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      margin: 12px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .features li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: #ffb6ff;
+    }
+    .friend {
+      margin-top: 60px;
+      background-color: rgba(70, 0, 90, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+      text-align: center;
+    }
+    .friend img {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+      margin-bottom: 15px;
+    }
+    .friend h2 {
+      color: #ff66cc;
+      margin-bottom: 10px;
+    }
+    .friend p {
+      font-size: 1em;
+      color: #ffe6ff;
+    }
+    .corner-avatar {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(255, 20, 147, 0.6);
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #bbb;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sadday.mp3" type="audio/mp3">
+  </audio>
+  <audio id="fart-sound">
+    <source src="https://www.soundjay.com/human/sounds/fart-01.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+    <img class="corner-avatar" src="https://github.com/Kraken1239/logitech222/blob/main/IMG_7446.png?raw=true" alt="друг">
+    <header>
+      <img class="header-img" src="https://github.com/Kraken1239/logitech222/blob/main/62389.jpg?raw=true" alt="Logitech G29">
+      <h1>Продаю Logitech G29</h1>
+      <p>Топовый руль для симрейсинга — подключай и гоняй!</p>
+      <p><em>Продаю, чтобы помочь другу на инвалидной коляске — каждый рубль пойдёт на его лечение 🙏</em></p>
+      <div class="price">99999 В-баксов</div>
+      <div class="buttons">
+        <a href="https://t.me/your_telegram">Связаться в Telegram</a>
+        <a href="https://wa.me/79999999999">Связаться в WhatsApp</a>
+        <button class="music-button" onclick="document.getElementById('bg-music').play()">🎵 Включить музыку</button>
+        <button class="music-button" onclick="document.getElementById('bg-music').pause()">🔇 Выключить музыку</button>
+        <button class="music-button" onclick="document.getElementById('fart-sound').play()">💨 Пердёж</button>
+      </div>
+    </header>
+
+    <section class="features">
+      <h2>Характеристики</h2>
+      <ul>
+        <li>Совместим с PS4 / PS5 / ПК</li>
+        <li>Идеальное состояние, использовался аккуратно</li>
+        <li>В комплекте оригинальные педали</li>
+        <li>Мощная реалистичная обратная связь</li>
+        <li>Легко подключается по USB</li>
+      </ul>
+    </section>
+
+    <section class="friend">
+      <img src="https://github.com/Kraken1239/logitech222/blob/main/IMG_7910.jpg?raw=true" alt="Друг Эмир">
+      <h2>Это мой друг Эмир</h2>
+      <p>Он попал в аварию и теперь прикован к инвалидной коляске. Я продаю руль, чтобы помочь ему с реабилитацией и медицинским оборудованием. Спасибо каждому, кто откликнется ❤️</p>
+    </section>
+
+    <footer>
+      📍 Находится в Актау — самовывоз или доставка<br/>
+      &copy; 2025 Logitech G29. Все права защищены.
+    </footer>
+  </div>
+</body>
+</html>
